@@ -58,13 +58,6 @@ public class estest {
     }
 
     @Test
-    public void getNextMonth() {
-        Calendar calendar = Calendar.getInstance();
-        calendar.add(calendar.MONTH, 1);
-        System.out.println(calendar.get(Calendar.MONTH) + 1);
-    }
-
-    @Test
     public void testCreateIndex() throws IOException {
         CreateIndexRequest request = new CreateIndexRequest("car");
         Map<String,String> map = new HashMap<>();
